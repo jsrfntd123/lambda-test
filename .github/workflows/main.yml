@@ -19,6 +19,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install PyTest
+      run: |
+          pip install pytest==4.6.11
     - name: Test with pytest
       run: |
           pytest
