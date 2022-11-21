@@ -14,9 +14,12 @@ jobs:
       matrix:
         node-version: [14.x]
     steps:
-    - name: Install xmllint
+    - name: Update
       run: |
-        apt-get install build-essential
+        sudo apt-get update
+    - name: Install build-essential
+      run: |
+        sudo apt-get install -y build-essential
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v4
       with:
