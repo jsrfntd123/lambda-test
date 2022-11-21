@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a07264d4-1cca-4abf-9837-1b8e1908ab72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
     </list>
@@ -55,7 +56,7 @@
       <workItem from="1668785246022" duration="775000" />
       <workItem from="1668790617178" duration="4000" />
       <workItem from="1668800869812" duration="1143000" />
-      <workItem from="1668998960497" duration="1350000" />
+      <workItem from="1668998960497" duration="1567000" />
     </task>
     <servers />
   </component>
