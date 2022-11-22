@@ -4,7 +4,7 @@ frameworkVersion: '3'
 
 provider:
   name: aws
-  runtime: python3.9
+  runtime: python3.10
 
 functions:
   hello:
@@ -17,5 +17,5 @@ plugins:
 custom:
   pythonRequirements:
 #    dockerizePip: true
-    dockerImage: python:3.9
+#    dockerImage: python:3.10
     zip: true
