@@ -23,13 +23,13 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v4
       with:
-        python-version: '3.8'
+        python-version: '3.9'
     - name: Whereis
       run: |
         whereis python
     - name: python38
       run: |
-        python3.8 --version
+        python3.9 --version
     - name: Test python
       run: |
         echo $(python --version)
