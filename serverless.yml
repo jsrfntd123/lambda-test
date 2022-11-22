@@ -13,6 +13,7 @@ functions:
 plugins:
   - serverless-python-requirements
 
-#custom:
-#  pythonRequirements:
-#    dockerizePip: true
+
+custom:
+  pythonRequirements:
+    dockerImage: python:3.9.15-buster
