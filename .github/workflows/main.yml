@@ -27,6 +27,9 @@ jobs:
     - name: Whereis
       run: |
         whereis python
+    - name: python38
+      run: |
+        python3.8 --version
     - name: Test python
       run: |
         echo $(python --version)
