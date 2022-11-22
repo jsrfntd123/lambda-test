@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18]
+        node-version: [18.12.1]
     steps:
     - name: Update
       run: |
@@ -18,10 +18,10 @@ jobs:
     - name: Install build-essential
       run: |
         sudo apt-get install -y build-essential
-    - uses: actions/checkout@v2
     - uses: actions/setup-python@v4
       with:
         python-version: '3.9'
+    - uses: actions/checkout@v2
 #    - name: Test python
 #      run: |
 #        echo $(python --version)
@@ -35,10 +35,10 @@ jobs:
 #    - name: Test with pytest
 #      run: |
 #          pytest
-    - name: serverless install plugin
-      uses: serverless/github-action@v3
-      with:
-        args: plugin install --name serverless-python-requirements
+#    - name: serverless install plugin
+#      uses: serverless/github-action@v3
+#      with:
+#        args: plugin install --name serverless-python-requirements
     - name: serverless deploy
       uses: serverless/github-action@v3
       with:
