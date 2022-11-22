@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a07264d4-1cca-4abf-9837-1b8e1908ab72" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.serverless/lambda-test.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/lambda-test.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.serverless/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.serverless/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.serverless/serverless-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/serverless-state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
