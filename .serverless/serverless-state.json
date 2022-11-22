@@ -6,7 +6,7 @@
     },
     "provider": {
       "name": "aws",
-      "runtime": "python3.9",
+      "runtime": "python3.10",
       "stage": "dev",
       "region": "us-east-1",
       "versionFunctions": true,
@@ -173,10 +173,10 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/lambda-test/dev/1669159275218-2022-11-22T23:21:15.218Z/lambda-test.zip"
+                "S3Key": "serverless/lambda-test/dev/1669160821775-2022-11-22T23:47:01.775Z/lambda-test.zip"
               },
               "Handler": "handler.hello",
-              "Runtime": "python3.9",
+              "Runtime": "python3.10",
               "FunctionName": "lambda-test-dev-hello",
               "MemorySize": 1024,
               "Timeout": 6,
@@ -191,14 +191,14 @@
               "HelloLogGroup"
             ]
           },
-          "HelloLambdaVersionX1t9FTdrmqRYPCDZdtVrByu8sVKXUsBQKPYHx4n3xo": {
+          "HelloLambdaVersionIQbWBtE2qLqLlz380ip3PnSfpdZJpsQ0yo481U": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "/H6O0KyKfLIWqaywfpYHg2g7yKQLoCecipZ8W2Q9I9k="
+              "CodeSha256": "D7X96MMqpaMpew8ZKl22r4Ijgn04vzqxbE3s+G0sgTU="
             }
           }
         },
@@ -214,7 +214,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersionX1t9FTdrmqRYPCDZdtVrByu8sVKXUsBQKPYHx4n3xo"
+              "Ref": "HelloLambdaVersionIQbWBtE2qLqLlz380ip3PnSfpdZJpsQ0yo481U"
             },
             "Export": {
               "Name": "sls-lambda-test-dev-HelloLambdaFunctionQualifiedArn"
@@ -308,7 +308,6 @@
     },
     "custom": {
       "pythonRequirements": {
-        "dockerImage": "python:3.9",
         "zip": true
       }
     },
@@ -324,9 +323,9 @@
         "package": {},
         "memory": 1024,
         "timeout": 6,
-        "runtime": "python3.9",
+        "runtime": "python3.10",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersionX1t9FTdrmqRYPCDZdtVrByu8sVKXUsBQKPYHx4n3xo"
+        "versionLogicalId": "HelloLambdaVersionIQbWBtE2qLqLlz380ip3PnSfpdZJpsQ0yo481U"
       }
     },
     "configValidationMode": "warn",
@@ -352,7 +351,7 @@
     "artifact": "/Users/juansebastianromerofernandez/Documents/projects/lambda-test/.serverless/lambda-test.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/lambda-test/dev/1669159275218-2022-11-22T23:21:15.218Z",
+    "artifactDirectoryName": "serverless/lambda-test/dev/1669160821775-2022-11-22T23:47:01.775Z",
     "artifact": "lambda-test.zip"
   }
 }

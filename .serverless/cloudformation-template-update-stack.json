@@ -161,10 +161,10 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/lambda-test/dev/1669159275218-2022-11-22T23:21:15.218Z/lambda-test.zip"
+          "S3Key": "serverless/lambda-test/dev/1669160821775-2022-11-22T23:47:01.775Z/lambda-test.zip"
         },
         "Handler": "handler.hello",
-        "Runtime": "python3.9",
+        "Runtime": "python3.10",
         "FunctionName": "lambda-test-dev-hello",
         "MemorySize": 1024,
         "Timeout": 6,
@@ -179,14 +179,14 @@
         "HelloLogGroup"
       ]
     },
-    "HelloLambdaVersionX1t9FTdrmqRYPCDZdtVrByu8sVKXUsBQKPYHx4n3xo": {
+    "HelloLambdaVersionIQbWBtE2qLqLlz380ip3PnSfpdZJpsQ0yo481U": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HelloLambdaFunction"
         },
-        "CodeSha256": "/H6O0KyKfLIWqaywfpYHg2g7yKQLoCecipZ8W2Q9I9k="
+        "CodeSha256": "D7X96MMqpaMpew8ZKl22r4Ijgn04vzqxbE3s+G0sgTU="
       }
     }
   },
@@ -202,7 +202,7 @@
     "HelloLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersionX1t9FTdrmqRYPCDZdtVrByu8sVKXUsBQKPYHx4n3xo"
+        "Ref": "HelloLambdaVersionIQbWBtE2qLqLlz380ip3PnSfpdZJpsQ0yo481U"
       },
       "Export": {
         "Name": "sls-lambda-test-dev-HelloLambdaFunctionQualifiedArn"
