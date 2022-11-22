@@ -10,8 +10,8 @@ functions:
   hello:
     handler: handler.hello
 
-plugins:
-  - serverless-python-requirements
+#plugins:
+#  - serverless-python-requirements
 
 
 custom:
