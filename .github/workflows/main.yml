@@ -24,12 +24,9 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.8'
-    - name: Version
+    - name: Whereis
       run: |
-        python -c "import sys; print(sys.path)"
-    - name: Version 2
-      run: |
-        ls /opt/hostedtoolcache/Python/3.8.14/x64/lib/python3.8
+        whereis python
     - name: Test python
       run: |
         echo $(python --version)
