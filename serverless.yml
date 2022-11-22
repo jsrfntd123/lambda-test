@@ -16,6 +16,6 @@ plugins:
 
 custom:
   pythonRequirements:
-    dockerizePip: true
+#    dockerizePip: true
 #    dockerImage: python:3.10.8-buster
     zip: true
