@@ -173,7 +173,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/lambda-test/dev/1669134245042-2022-11-22T16:24:05.042Z/lambda-test.zip"
+                "S3Key": "serverless/lambda-test/dev/1669155929225-2022-11-22T22:25:29.225Z/lambda-test.zip"
               },
               "Handler": "handler.hello",
               "Runtime": "python3.9",
@@ -191,14 +191,14 @@
               "HelloLogGroup"
             ]
           },
-          "HelloLambdaVersionWD0OG7Uu1C1W6AXqQB9g7SIQOGmW8GIUhnTwoHIOD0": {
+          "HelloLambdaVersionbsUcM5lwMs8wxb7m5ISVjBDLOPM8ykKkaCoRovjg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "9/nwT+tLrnM5PY68d4Y445dY/Wi0IS+0NBgbpPc66tg="
+              "CodeSha256": "ataxpV6rKJkF7mL33zzS3QFtapixrbXvirXVx7h580M="
             }
           }
         },
@@ -214,7 +214,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersionWD0OG7Uu1C1W6AXqQB9g7SIQOGmW8GIUhnTwoHIOD0"
+              "Ref": "HelloLambdaVersionbsUcM5lwMs8wxb7m5ISVjBDLOPM8ykKkaCoRovjg"
             },
             "Export": {
               "Name": "sls-lambda-test-dev-HelloLambdaFunctionQualifiedArn"
@@ -306,6 +306,11 @@
       },
       "vpc": {}
     },
+    "custom": {
+      "pythonRequirements": {
+        "zip": true
+      }
+    },
     "plugins": [
       "serverless-python-requirements"
     ],
@@ -320,7 +325,7 @@
         "timeout": 6,
         "runtime": "python3.9",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersionWD0OG7Uu1C1W6AXqQB9g7SIQOGmW8GIUhnTwoHIOD0"
+        "versionLogicalId": "HelloLambdaVersionbsUcM5lwMs8wxb7m5ISVjBDLOPM8ykKkaCoRovjg"
       }
     },
     "configValidationMode": "warn",
@@ -336,6 +341,9 @@
       },
       "plugins": {
         "$ref": "$[\"service\"][\"plugins\"]"
+      },
+      "custom": {
+        "$ref": "$[\"service\"][\"custom\"]"
       }
     },
     "layers": {},
@@ -343,7 +351,7 @@
     "artifact": "/Users/juansebastianromerofernandez/Documents/projects/lambda-test/.serverless/lambda-test.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/lambda-test/dev/1669134245042-2022-11-22T16:24:05.042Z",
+    "artifactDirectoryName": "serverless/lambda-test/dev/1669155929225-2022-11-22T22:25:29.225Z",
     "artifact": "lambda-test.zip"
   }
 }
