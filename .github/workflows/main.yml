@@ -15,38 +15,18 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.8'
-    - uses: actions/checkout@v2
-#    - name: Test python
-#      run: |
-#        echo $(python --version)
+    - name: Checkout repository
+      uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Directory
-      run: |
-          echo $(python3.8 --version)
-#    - name: Install PyTest
-#      run: |
-#          pip install pytest==4.6.11
-#    - name: Test with pytest
-#      run: |
-#          pytest
-#    - name: serverless install plugin
-#      uses: serverless/github-action@v3
-#      with:
-#        args: plugin install --name serverless-python-requirements
-#    - name: Install Plugin and Deploy
-#      uses: serverless/github-action@v3.1
-#      with:
-#        args: -c "serverless plugin install --name serverless-python-requirements && serverless deploy"
-#        entrypoint: /bin/sh
     - name: Install serverless
       run: |
           npm install -g serverless
     - name: Deploy serverless
       run: |
-        serverless plugin install --name serverless-python-requirements && serverless deploy
+        serverless deploy
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
